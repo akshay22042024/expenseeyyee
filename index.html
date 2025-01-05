@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Eye</title>
+    <body style="background-color:black;">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+        .header { text-align: center; padding: 20px; background: #4CAF50; color: white; }
+        .header img { width: 100px; position: absolute; left: 20px; top: 20px; }
+        .header h1 { margin: 0; font-size: 2.5em; }
+        .EXPENSES { padding: 50px 0; background-color: #f9f9f9; }
+        .EXPENSES h2 { text-align: center; margin-bottom: 20px; }
+        .slider { position: relative; width: 100%; height: 80vh; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        .slider img { width: 100%; height: 100%; object-fit: cover; }
+        .info-section { text-align: center; padding: 50px; background: linear-gradient(135deg, #1E90FF, #6495ED); color: white; margin-bottom: 30px; }
+        .info-section h2 { margin-top: 20px; margin-bottom: 15px; }
+        .info-section p { margin-bottom: 40px; }
+        .contact-section { text-align: center; padding: 30px; background: #4CAF50; color: white; }
+        .creators-section { text-align: center; padding: 30px; background: #333; color: white; }
+        .creators-section h2 { margin-bottom: 15px; }
+        .creators-section p { margin: 5px 0; font-size: 1.1em; }
+        .get-started-button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .get-started-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .get-started-button:active {
+            transform: translateY(2px);
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFC107;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(120deg, #0D47A1, #42A5F5);
+            color: white;
+            background-attachment: fixed;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        .hero .cta {
+            margin-top: 40px;
+        }
+
+        .hero .cta a {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #FFC107;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hero .cta a:hover {
+            background-color: #FFB300;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 60px 40px;
+            background-color: #F5F5F5;
+        }
+
+        .features .feature {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .features .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .features .feature h3 {
+            font-size: 1.8rem;
+            margin: 20px 0 10px;
+        }
+
+        .features .feature p {
+            font-size: 1rem;
+            color: #666;
+        }
+         .images {
+            padding: 60px 40px;
+            background-color: #E3F2FD;
+            text-align: center;
+        }
+
+        .images h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .images img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+ footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0D47A1;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="https://www.thegreatapps.com/application/upload/Apps/2017/03/expense-manager-22.png" alt="Expense Eye Logo">
+        <h1>Welcome to Expense Eye</h1>
+        <p>Your personal expense tracker made simple and efficient!</p>
+    </div>
+
+    <nav>
+        <a href="#">HOME PAGE</a>
+        <a href="#">GALLERY</a>
+        <a href="#">ABOUT</a>
+        <a href="#">FEATURES</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">CREATORS</a>
+        <a href="#">BLOG</a>
+        <a href="#">EXPENSE CALCULATOR</a>
+        <a href="#">EXPENSES</a>
+        <a href="#">ESSENTIAL EXPENSES</a>
+         <a href="#">NON ESSENTIAL EXPENSES</a>
+          <a href="#">SAVINGS</a>
+     </nav>
+    
+       <div class="gallery">
+        <h2>Gallery</h2>
+        <div class="slider">
+            <img src="https://passiveincomemd.com/wp-content/uploads/2019/12/top-ten-matter-most-personal-finance-2048x1365.jpg" alt="Slide 1">
+                   <div class="dots">
+                <span class="dot active"></span>
+                           </div>
+        </div>
+    </div>
+
+    <div class="info-section">
+      <span style="color: black; font-weight: bold;">
+        <h2>About Expense Eye</h2>
+        <p>Expense Eye is a simple, intuitive platform to track your daily expenses, manage budgets, and achieve financial clarity.Expense Eye is a simple yet powerful tool designed to help individuals track their daily, weekly, and monthly expenditures with ease. By offering a user-friendly interface and insightful analytics, it empowers users to take control of their finances, minimize unnecessary spending, and achieve their financial goals.</p>
+ </span>
+
+    </div>
+
+    <div class="info-section">
+       <span style="color: black; font-weight: bold;">
+    <section style="background: linear-gradient(to right, red, yellow);">
+        <h2>Why Choose Expense Eye?</h2>
+        <p>Expense Eye is your ultimate tool to take control of your finances. Whether you're budgeting for the month or tracking daily expenses, we provide a seamless experience to help you stay on top of your money matters. Join thousands of users who trust Expense Eye for their personal finance management.</p>
+        <p>1. Designed for Everyone</p>
+        <p>2. Ease of Use</p>
+        <p>3.Customizability</p>
+        <p>4. Proactive Budget Management</p>
+</section>
+
+        <a href="ak.html">
+            <button class="get-started-button">Get Started</button>
+        </a>
+        </span>
+    </div>
+    <section class="features">
+    <div class="feature">
+        <h3>Fast Insights</h3>
+        <p>Get instant insights into your spending habits.</p>
+    </div>
+    <div class="feature">
+        <h3>Customizable Tracking</h3>
+        <p>Track your expenses the way that works best for you.</p>
+    </div>
+    <div class="feature">
+        <h3>Secure and Private</h3>
+        <p>Your financial data is safe and secure with us.</p>
+    </div>
+</section>
+ 
+   <section class="images">
+    <h2>Gallery</h2>
+    <img src="https://media.istockphoto.com/id/1646087551/photo/businessman-touching-virtual-us-dollar-icon-usd-is-main-exchange-currency-the-world-monetary.webp?b=1&s=170667a&w=0&k=20&c=zlr5TypyRgXPxO1Oguw7wlNfEdt1uMCQg1f9g8jmC2M=" alt="Feature 1">
+    <img src="https://img.freepik.com/premium-photo/close-up-businessman-hand-pointing-creative-glowing-round-dollar-icon_670147-14568.jpg" alt="Feature 2">
+    <img src="https://th.bing.com/th/id/OIP.9YDjJshUHaNzY12VkFUXQQHaE8?w=800&h=534&rs=1&pid=ImgDetMain" alt="Feature 3">
+    <img src="https://th.bing.com/th/id/OIP.3ZtqE1028cIwahMScbtV8gHaE8?rs=1&pid=ImgDetMain" alt="Feature 4">
+    <img src="https://thumbs.dreamstime.com/z/expenses-word-cloud-concept-grey-background-90690586.jpg" alt="Feature 5">
+    <img src="https://assets.goodfirms.co/images/what-is-expense-management-software.jpg" alt="Feature 6">
+     <img src="https://img.theweek.in/content/dam/week/news/india/images/2019/12/27/Representative-India-GST-rupee-federal-gdp-rupee-shutterstock.jpg" alt="Feature 7">
+     <img src="https://th.bing.com/th/id/R.9bf21602ce9b7e8d6cff72aba59d025a?rik=6q%2fh4cKdFSOZ1w&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f51f6a64469bedd4a41000001-1024-768%2fcredit-cards-8.jpg&ehk=3rO59fjADPK3Lo9OZe4%2bysfI3ujA%2fRfgRqiBVYBLogI%3d&risl=&pid=ImgRaw&r=0" alt="Feature 8">
+     <img src="https://thumbs.dreamstime.com/z/inr-indian-currency-money-india-business-background-rupees-closeup-photo-blurred-back-171492322.jpg" alt="Feature 9">
+      <img src="https://thumbs.dreamstime.com/z/cash-dollars-credit-cards-tambov-russian-federation-may-logos-visa-mastercard-visa-mastercard-two-biggest-41905697.jpg" alt="Feature 10">
+      <img src="https://th.bing.com/th/id/OIP.G_xM9-7JIpPVj7PpEa8k7AHaE_?rs=1&pid=ImgDetMain" alt="Feature 11">
+         <img src="https://th.bing.com/th/id/OIP.f2qhbVS6YwF43e4CSmt7uwHaEK?rs=1&pid=ImgDetMain" alt="Feature 12">
+      </section>
+
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>For any queries, feel free to get in touch with us!</p>
+        <a href="mailto:contact@expenseeye.com">Email Us</a>
+        <section class="contact">
+    <p>Have questions or feedback? Reach out to us at <a href="mailto:support@expenseeye.com">support@expenseeye.com</a>. We would love to hear from you!</p>
+</section>
+
+    </div>
+
+    <div class="creators-section">
+        <h2>Creators-GROUP"L"</h2>
+        <p>AKSHAY UPADHYAY</p>
+        <p>ANURAG KUSHWAHA</p>
+        <p>RANJEET RAJBHAR</p>
+        <p>RITURAJ PANDEY</p>
+    </div>
+
+    <script>
+        // Slider functionality
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slider img');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlides() {
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? 'block' : 'none';
+            });
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === slideIndex);
+            });
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        showSlides();
+    </script>
+    <footer>
+    <p>&copy; 2025 Expense Eye. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

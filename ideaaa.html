@@ -1,0 +1,1757 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Expense Eye</title>
+<body style="background-color:white;">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style type="text/css" id="wp-custom-css">
+			/* Testimonials */
+.atu-hc-testimonial .elementor-testimonial-content {
+	padding: 30px;
+	background-color: #f7f7f7;
+}
+.atu-hc-testimonial .elementor-testimonial-meta-inner {
+	margin-left: 20px;
+}
+.atu-hc-testimonial .elementor-testimonial-image {
+	position: relative
+}
+.atu-hc-testimonial .elementor-testimonial-image::after {
+	content: '';
+	position: absolute;
+	top: -21px;
+	left: 20px;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #f7f7f7;
+}
+
+/* Contact form */
+.atu-hc-contact input:not(.wpcf7-submit) {
+	width: 100%;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+.atu-hc-contact .contact-row {
+	margin-bottom: 10px;
+}
+.atu-hc-contact .col-md-6:first-of-type {
+	padding-right: 5px;
+}
+.atu-hc-contact .col-md-6:last-of-type {
+	padding-left: 5px;
+}
+.atu-hc-form {
+	max-width: 470px;
+}
+
+/* Contact page map */
+.contact-page-map #atu-map {
+	height: 400px;
+}
+.contact-page-form label,
+.contact-page-form input:not(.wpcf7-submit),
+.contact-page-form select {
+	width: 100%;
+	max-width: 100%;
+}
+.contact-page-form select {
+	padding: 17px 20px;
+}
+.contact-page-form .wpcf7-submit {
+	width: auto;
+	margin: 0 auto;
+	display: table;
+	border-radius: 30px;
+	box-shadow: 0 5px 35px 0 rgba(51, 51, 51, 0.26);
+}
+.contact-page-form .row {
+	margin-bottom: 10px;
+}
+.menuStyle2 .main-navigation .header-search-toggle a:hover:after {
+	display: none;
+}
+
+.logo-img{
+	    float: left;
+	        padding-top: 22px;
+}
+.custom-button {
+    background-color: #e9a551;
+    box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.social-media{
+	float: left;
+    width: 86px;
+    margin-left: 115px;
+}
+.social-media i{
+	font-size: 13px;
+	    font-family: FontAwesome;
+	    font-style: normal;
+}
+.social-media a{
+	    background: #2DB1A6;
+	        padding: 6px;
+}
+.finsafe-header{
+	box-shadow: -6px 7px 5px 0px rgba(225,225,225,1);
+}
+.social-media-bottom{
+	float: left;
+	clear: both;
+}
+.social-media-bottom i{
+	font-size: 13px;
+	font-family: FontAwesome;
+	font-style: normal;
+}
+.social-media-bottom a{
+	 background: #2DB1A6;
+	        padding: 11px;
+}
+.links{
+	float: right;
+}
+.footer-finesafe{
+	padding: 20px 0 18px;
+	margin-top: 60px;
+    background-color: #dfdddd;
+}
+.finesafe-logo{
+	float: left;
+    margin-bottom: 23px;
+    width: 182px;
+	    margin-left: -6px;
+}
+#fin-button {
+	    background: no-repeat;
+    color: #0855ab;
+    float: right;
+}
+.entry-title{
+	   text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.elementor-heading-title{
+	    color: #ea6456;
+}
+a{
+	color: #2db1a6;
+}
+.fin-logo-header{
+	float: left;
+}
+.domain{
+	float: right;
+	display: block;
+}
+#home-button{
+	font-size: 22px;
+    padding: 0 0 18px;
+}
+.domain-botttom{
+	float: left;
+    clear: both;
+    color: #000;
+    padding: 12px 0;
+}
+#financial{
+	    border-right: 1px solid #e1e1e1;
+}
+#beginner{
+	    border-bottom: 1px solid #e1e1e1;
+    padding: 0 0 20px
+}
+#about-border{
+	border-bottom: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+#faq-border{
+	    border-bottom: 1px solid #e1e1e1;
+}
+#article-border{
+	border-right: 1px solid #e1e1e1;
+}
+#headings-faq b{
+	color: #2db1a6;
+	font-size: 20px;
+}
+#headings-faq strong{
+	color: #2db1a6;
+	font-size: 20px;
+}
+#headings-faq{
+ border-right: 1px solid #e1e1e1;
+    padding: 0 16px 0;
+}
+h2{
+	font-size: 25px;
+}
+h4{
+	font-size: 18px;
+}
+.elementor-element-populated{
+	    padding-left: 10px !important;
+}
+ul{
+	padding: 0;
+}
+#fixed-side{
+	    position: fixed;
+    right: 40px;
+}
+.questions ul li{
+	list-style: none;
+}
+.questions{
+	float: left;
+	width: 50%;
+	padding-bottom: 30px;
+}
+
+.questions ul li input[type="radio"]
+{
+    -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #fff;
+     color: #666;
+     top: 5px;
+     height: 16px;
+     width: 16px;
+     border: 1px solid #ea6456;
+     border-radius: 3px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+
+.questions ul li input[type="radio"]:checked
+{
+    background-color: #ea6456;
+}
+.questions ul li input[type="radio"] label
+{
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     cursor: pointer;
+}
+
+.questions p{
+	color: #2db1a6;
+	font-size: 16px;
+}
+.questions label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    width: 84%;
+    vertical-align: top;
+}
+.container-header .questions:nth-child(even) {
+    float: right;
+    width: 43%;
+}
+.pop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+	z-index: 1;
+}
+.popup ul{
+	    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 13px;
+}
+.login_pop{
+	background: rgba(255,255,255,1);
+	display: block;
+}
+.popup{
+    max-width: 350px;
+    max-height: 200px;
+    border: 2px solid #3f3f3f;
+    position: absolute;
+    left:  0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+}
+.popup p{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 49px;
+    font-weight: 700;
+    color: #dd9393;
+    margin-bottom: 0;
+}
+.expense_head, .expense_vals ,.expense_totals{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    margin:14px 0;
+}
+.expense_head li:first-child, .expense_vals li:first-child, .expense_totals li:first-child{
+    float: left;
+    width: 68%;
+}
+.expense_vals li:nth-child(2), .expense_head li:nth-child(2), .expense_totals li:nth-child(2){
+    float: right;
+    width: 30%;
+    margin-left: 2%;
+}
+.expense_head li:nth-child(2){
+    text-align: center;
+}
+.expense_head li p{
+    text-align: left;
+    background: #e9a551;
+    color: #231f20;
+    padding: 13px 10px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    height: 100%;
+    align-self: center;
+}
+.expense_vals li:first-child{
+    border: 1px solid #ed8075;
+    border-radius: 10px;
+    margin: 0px;
+}
+.expense_vals li:first-child p{
+    padding: 10px 20px;
+        margin: 0;
+}
+.expense_vals li input{
+    border: 1px solid #ed8075;
+    color: #231f20;
+    font-size: 14px;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 11px 10px;
+    width: 100%;
+    height: 100%;
+}
+.expense_income{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.expense_totals li:first-child{
+    margin: 0px;
+    cursor: pointer;
+}
+.expense_totals li:first-child p{
+    padding: 11px 10px;
+    border: 2px solid #ecb168;
+    border-radius: 10px;
+    color: #000;
+    margin: 0;
+    background: transparent;
+    font-weight: 700;
+}
+.expense_totals li:first-child p:hover{
+    background: #ecb168;
+    color: #fff;
+}
+.expense_totals li:nth-child(2){
+    padding: 11px 10px;
+    border: 1px solid #ecb168;
+    border-radius: 10px;
+}
+.expense_totals li:nth-child(2) p{
+  margin: 0;
+	white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: clip;
+}
+.expense_sheet h2{
+	margin-top: 40px;
+    background: #a9dcda;
+    padding: 15px 0;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sheet2{
+    float: left;
+    width: 48%;
+}
+.sheet1{
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.expense_total_vals{
+    clear: both;
+}
+.expense_total_vals .expense_head li:first-child{
+    float:right;
+    width: 26%;
+}
+.total_exp_div, .total_exp_emi{
+    float: left;
+    width: 48%;
+}
+.total_exp_emi{
+	padding-top: 60px;
+    float: right;
+}
+.financial_cnt h3{
+    color: #8a8a8d;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.financial_cnt ul, .fn_div ul{
+    list-style: none;
+    margin: 0 0 20px 0;
+}
+.financial_cnt >ul li{
+    display: inline-block;
+    margin-right: 2%;
+    width: 14%;
+}
+.financial_cnt ul li span{
+    color: #ea6456;
+    margin-right: 2%;
+    display: inline-block;
+}
+
+.fn_div p{
+    color: #8a8a8d;
+    font-size: 20px;
+}
+form.ajax-auth{
+	display: block;
+}
+.login_overlay{
+	display: none;
+}
+.home .login_overlay{
+	display: block;
+}
+.Calculcation{
+
+}
+#learning img{
+	width: 100px !important;
+}
+#learning h5{
+	font-size: 18px !important;
+}
+#email_login{
+	    margin-top: 40px;
+    margin-bottom: 22px;
+}
+#Expenses_per,#EMI_per, #Savings_per {
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.elementor-element-populated
+{padding-top:3px!important;
+	padding-bottom:10px !important;
+	padding-right:10px !important;
+	padding-left:10px
+	!important;}
+.elementor-image{
+	padding-top:3px;
+}
+.pf-con h1{
+          font-family: Work Sans;
+          font-style: normal;
+          font-size: 30px;
+          line-height: 39px;
+          color: #1e314f;
+          text-align: center;
+          padding: 15px 0 0;
+      
+      }
+      .pf-con h4{
+          font-family: Work Sans;
+          font-style: normal;
+          font-size: 16px;
+          line-height: 27px;
+          color: #1e314f;
+          font-weight: 700;    
+          margin-bottom: 0px;
+      }
+      .pf-con{
+          padding: 20px 20px;
+      }
+      .pf-con1 {
+          padding: 0 0px 0;
+              position: sticky;
+          top: 0px;
+      }
+      
+      .pf-con h4 span{
+          font-family: Work Sans;
+          font-style: normal;
+          font-size: 16px;
+          line-height: 27px;
+          color: #1e314f;
+          font-weight: 700;
+          float:right;
+      }
+      
+      input[type=range] {
+          display: block;
+          width: 100%;
+          margin-bottom: 15px
+      }
+      
+      .pf-con .paper .f label {
+          font-family: Work Sans;
+          /* font-weight: 500; */
+          font-style: normal;
+          font-size: 16px;
+          line-height: 27px;
+          color: #1e314f;
+          padding: 10px 0 0;
+          font-weight: 700;
+      }
+      
+      
+      
+      .pf-con .paper input[type=text],
+      .pf-con .paper input[type=number] {
+          font-family: Work Sans;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 27px;
+          color: #1e314f;
+          padding: 5px 10px;
+          width: 100%;
+          outline: 0;
+          border-width: 0 0 1px;
+          border-color: #b6e7e3;
+          margin-bottom: 15px;
+      }
+      .paper p{
+          font-size: 12px;
+          color: red;
+          text-align: right;
+          padding: 0;
+          margin: 0 auto;
+          font-family: Work Sans;
+      }
+      
+      
+      html .paper .f:last-child {
+          margin-bottom: 0;
+      }
+      .output {
+          padding: 15px 0px 10px;
+          border-radius: 0px;
+          background: linear-gradient(-45deg, #2db1a6, #319f96);
+          margin: 0px 0 1px;
+          box-shadow: 0px 1px 39px rgba(45, 177, 165, 0.19);
+      }
+      .output1 {
+          padding: 10px 20px;
+          /* background: #2db1a6; */
+          border-radius: 5px;
+      }
+      .output h3 {
+          color: #fff;
+          text-align: center;
+          padding: 0px 0 0px;
+          font-size: 19px;
+          font-family: Work Sans
+      }
+      .output h4 {
+          color: #2db1a6;
+          text-align: center;
+          padding: 0px 0 0px;
+          font-size: 22px;
+          font-family: Work Sans;
+      }
+      .output1 .pf-btn {
+         margin: 15px 0;
+    padding: 12px 30px;
+    background: rgb(234, 100, 86);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #F0437E;
+    background-color: #1EAF12;
+    border-radius: 30px;
+    font-family: Work Sans;
+    box-shadow: 0px 5px 20px 11px rgba(234, 100, 86, 0.12);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    transition: all 0.3s;
+      }
+      .output1 button.pf-btn:hover {
+    background: #fff;
+    color: #1EAF12;
+    border: 2px solid #1EAF12;
+    box-shadow: none;
+}
+      .output1 .pf-btn:focus{
+          outline:none !important;
+      }
+      
+      .output h4 {
+          color: #1e3154;
+          /* padding: 10px 40px 10px; */
+          font-size: 33px;
+          font-family: Work Sans;
+          text-align: center;
+      }
+      
+      .paper{
+          padding: 0 0 10px;
+      }
+        .range-bar {
+          width : 250px;
+          background : #dadfe1;
+        }
+          .range-handle {
+            background : #26c;
+            width : 20px;
+            margin-top : 5px;
+            height : 20px; 
+          }
+          .range-quantity {
+            background : #26c6da;
+          }
+        
+          .pf-card{
+                  padding: 30px;
+          position: relative;
+          }
+          .pf-card1{
+              padding: 0 50px 0;
+          }
+          .pf-con .paper input[type=text]:focus {
+              border-color: #1b9f94;
+          }
+      
+      
+      
+          /* 2ndstyle */
+      
+      
+      
+          .pf-card-1  h1{
+              font-family: Work Sans;
+              font-style: normal;
+              font-size: 30px;
+              line-height: 39px;
+              color: #1e314f;
+              text-align: center;
+              padding: 15px 0 0;
+          
+          }
+      
+          .bor{
+              width: 80%;
+          }
+      
+          .pf-card1{
+              padding: 30px;
+          }
+          .pf-card-1{
+              box-shadow: 0px 1px 39px rgba(45, 177, 165, 0.19);
+              border-radius: 5px;
+          }
+      
+          .pf-cont{
+            
+          display: flex;
+          }
+      
+          .pf-la{
+              width: 55%;
+          padding: 10px 30px 10px;
+          }
+          .pf-la-cont{
+              padding: 10px 0;
+          }
+          .pf-la-cont label{
+              color: #1e314f;
+          font-size: 16px;
+          font-weight: 700;
+          }
+          .pf-inp{
+              width: 45%;
+              padding: 10px 30px 10px;
+          }
+          .pf-inp input[type=text] {
+              font-family: Work Sans;
+              font-weight: 500;
+              font-style: normal;
+              font-size: 14px;
+              line-height: 27px;
+              color: #1e314f;
+              padding: 5px 10px;
+              width: 100%;
+              outline: 0;
+              border-width: 0 0 1px;
+              border-color: #b6e7e3;
+              margin-bottom: 15px;
+          }
+          .pf-inp  input[type=text]:focus {
+              border-color: #1b9f94;
+          }
+          .output2 .pf-btn {
+               margin: 15px 0;
+    padding: 12px 30px;
+    background: rgb(234, 100, 86);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #F0437E;
+    background-color: #1EAF12;
+    border-radius: 30px;
+    font-family: Work Sans;
+    box-shadow: 0px 5px 20px 11px rgba(234, 100, 86, 0.12);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    transition: all 0.3s;
+          }
+      .output2 button.pf-btn:hover {
+    background: #fff;
+    color: #1EAF12;
+    border: 2px solid #1EAF12;
+    box-shadow: none;
+}
+          .output1 {
+              padding: 15px 0px 10px;
+              border-radius: 0px;
+						   background: none;
+    box-shadow: none;
+          }
+                .sticky{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 60%;
+      right:0px;
+                }
+      
+          .output1 h3 {
+              color: #fff;
+              text-align: center;
+              padding: 0px 0 0px;
+              font-size: 19px;
+              font-family: Work Sans;
+          }
+      
+          .output1 h4 {
+              color: #1e3154; 
+              font-size: 33px;
+              font-family: Work Sans;
+              text-align: center;
+          }
+ .pf-card-1 h1 {
+  font-family: Work Sans;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 39px;
+  color: #1e314f;
+  text-align: center;
+  padding: 15px 0 0;
+}
+
+.bor {
+  width: 80% !important;
+}
+
+.pf-card1 {
+  padding: 30px;
+}
+.pf-card-1 {
+  box-shadow: 0px 1px 39px rgba(45, 177, 165, 0.19);
+  border-radius: 5px;
+}
+
+.pf-cont {
+  display: flex;
+}
+
+.pf-la {
+  width: 48%;
+  padding: 6px 15px 0px;
+}
+.pf-la-cont {
+  padding: 6px 0;
+}
+.pf-la h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  padding-bottom: 18px;
+}
+.pf-la-cont label {
+  color: #1e314f;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 5px;
+  margin-bottom: 11px;
+}
+.pf-inp {
+  width: 13%;
+  padding: 10px 15px 10px;
+}
+.pf-inp1 {
+  width: 13%;
+  padding: 10px 15px 10px;
+}
+.pf-inp2 {
+  width: 13%;
+  padding: 10px 15px 10px;
+}
+.pf-inp3 {
+  width: 13%;
+  padding: 10px 15px 10px;
+}
+.pf-inp input[type="text"] {
+  font-family: Work Sans;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #1e314f;
+  padding: 5px 10px;
+  width: 100%;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #b6e7e3;
+  margin-bottom: 20px;
+}
+.pf-inp input[type="text"]:focus {
+  border-color: #1b9f94;
+}
+.pf-inp h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.pf-inp1 
+input[type="text"] {
+  font-family: Work Sans;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #1e314f;
+  padding: 5px 10px;
+  width: 100%;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #b6e7e3;
+  margin-bottom: 20px;
+}
+.pf-inp1 input[type="text"]:focus {
+  border-color: #1b9f94;
+}
+.pf-inp1 h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.pf-inp2 input[type="text"] {
+  font-family: Work Sans;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #1e314f;
+  padding: 5px 10px;
+  width: 100%;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #b6e7e3;
+  margin-bottom: 20px;
+}
+.pf-inp2 input[type="text"]:focus {
+  border-color: #1b9f94;
+}
+
+.pf-inp2 h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.pf-inp3 input[type="text"] {
+  font-family: Work Sans;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 26 px;
+  color: #1e314f;
+  padding: 5px 10px;
+  width: 100%;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #b6e7e3;
+  margin-bottom: 20px;
+}
+.pf-inp3 input[type="text"]:focus {
+  border-color: #1b9f94;
+}
+.pf-inp3 h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.output2 .pf-btn {
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 40px 8px;
+  font-size: 18px;
+  background: #ea6456;
+  border: none;
+  border-radius: 30px;
+  font-family: Work Sans;
+  box-shadow: 0px 5px 20px 11px rgba(234, 100, 86, 0.2);
+  margin-bottom: 40px;
+	text-transform: capitalize;
+}
+
+.output1 {
+  padding: 15px 0px 10px;
+  border-radius: 0px;
+  
+}
+
+.output1 h3 {
+  color: #fff;
+  text-align: center;
+  padding: 0px 0 0px;
+  font-size: 19px;
+  font-family: Work Sans;
+}
+
+.output1 h4 {
+  color: #1e3154;
+  font-size: 33px;
+  font-family: Work Sans;
+  text-align: center;
+}
+.output-hra{
+    background: #2db0a5;
+    box-shadow: 0px 1px 39px rgba(45, 177, 165, 0.19);
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.ou-hr {
+  margin: 0px 0 0px;
+    background: #2DB0A5;
+    border-radius: 3px;
+    box-shadow: 0px 1px 39px rgba(45, 177, 165, 0.19);
+ 
+}
+.ou-hr1 {
+  margin: 0px 0 0px;
+  
+}
+.ou-hr h2 {
+  font-size: 30px;
+  margin: 10px 15px;
+  color: #1e3154;
+  text-align: center;
+}
+
+.out-h {
+  margin: 20px 15px;
+}
+.out-h1 {
+  margin: 20px 15px;
+}
+.out-h label {
+   font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin: 19px 0 0;
+}
+.out-h1 label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+.out-in {
+  margin: 20px 10px;
+}
+.out-in1 {
+      margin: 24px -15px;
+}
+.out-in1 input {
+ padding: 5px 0px 10px;
+    margin: 2px 0px 0px;
+  color: #1e3154;
+}
+.bore{
+    border-left: 1px solid black;
+    padding: 10px;
+    margin: 0px 10px;
+}
+.output-hran{
+    background: #FFF;
+    box-shadow: 0px 1px 39px rgba(45, 177, 165, 0.19);
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.ou-hrn {
+  margin: 10px 0 0px;
+ 
+}
+.ou-hr1n {
+  margin: 0px 0 0px;
+ 
+}
+.ou-hrn h2 {
+  font-size: 25px;
+    margin: 30px 15px;
+  color: #1e3154;
+  text-align: center;
+}
+
+.out-hn {
+  margin: 20px 15px;
+}
+.out-h1n {
+  margin: 20px 15px;
+}
+.out-hn label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e3154;
+}
+.out-h1n label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e3154;
+}
+.out-inn {
+  margin: 0px 15px;
+}
+.out-in1n {
+  margin: 18px -10px 0;
+}
+.out-in1n input {
+    padding: 5px 0px 10px;
+    margin: 2px 0px 0px;
+	  color: #1E3154;
+}
+.pf-card {
+     padding: 10px 0 0;
+}
+.newTaxCalculator{
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(234, 100, 86, 0.2);
+    padding: 15px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.newTaxCalculator h1{
+    font-size: 27px;
+    margin: 5px 15px 5px;
+    padding: 0 0 3px;
+    color: #1e3154;
+    text-align: center;
+}
+.taxTable {
+    padding: 20px 10px;
+}
+.newTaxCalculator table thead th {
+     color: #1E3154;
+    font-size: 17px;
+    padding: 10px 0px;
+    border-bottom: 2px solid rgb(234, 100, 86);
+}
+table tbody td{
+    padding: 5px 10px;
+	border: none !important;
+}
+.newTaxCalculator table tbody td label {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+    text-align: left !important;
+    display: block;
+}
+table tbody td input{
+     border: none !important;
+    border-bottom: 1px solid #ccc !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    text-align: center;
+    width: 100%;
+}
+table tbody td input {
+    border: 1px solid rgba(45, 177, 166, 0.41) !important;
+    border-bottom: 1px solid rgba(45, 177, 166, 0.41) !important;
+    border-radius: 3px !important;
+    padding: 0 0 !important;
+}
+.greenLabel{
+    background: #7fffd4c2 !important;
+}
+.yellowLable{
+    background-color: #fff297c2 !important;
+}
+.yellowLabelText{
+    color: #000;
+    font-weight: 600;
+    background: #fff297c2;
+    padding: 0 10px;
+}
+.greenLabelText{
+    color: #000;
+    font-weight: 600;
+    background: #7fffd4c2;
+    padding: 0 10px;
+}
+table tbody td input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #1e3154 !important;
+}
+table tbody td input.form-control:disabled{
+    background: #E4F7F5 !important;
+    border-bottom: none !important;
+    border: none !important;
+}
+.output2 .pf-btn {
+     margin: 15px 0;
+    padding: 12px 50px;
+    background: rgb(234, 100, 86);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #F0437E;
+    background-color: #1EAF12;
+    border-radius: 30px;
+    font-family: Work Sans;
+    box-shadow: 0px 5px 20px 11px rgba(234, 100, 86, 0.12);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    transition: all 0.3s;
+}
+.output-hra {
+    background: #2db0a5;
+    box-shadow: 0px 1px 39px rgba(45, 177, 165, 0.19);
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.output-hra input[type="text"] {
+    background: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 0;
+    color: #2db0a5;
+    font-weight: 500;  
+
+}
+.output-hra input[type="text"]:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.output-hra input[type="text"]:disabled{
+    background: #2db0a5;
+    color: #fff;
+    pointer-events: none;
+}
+
+
+.sub-pfOutput {
+    width: 100%;
+    padding: 0px 1px;
+    border-right: 1px solid #ccc;
+}
+
+.brd-none {
+    border-right: none !important;
+}
+
+.sub-pfOutput label {
+    float: left;
+    text-align: left;
+    width: 75%;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sub-pfOutput input {
+    float: right;
+    text-align: left !important;
+    width: 25%;
+    font-size: 15px !important;
+    padding: 0;
+    color: #fff !important;
+    font-weight: 500;
+    background: transparent !important;
+    pointer-events: none;
+}
+
+.ou-hr1 {
+    margin: 0px 0 0px;
+}
+
+.ou-hr h2 {
+    font-size: 25px;
+    margin: 5px 15px 15px;
+    padding: 0 0 3px;
+    color: #1e3154;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+}
+
+.pf-mainOutput {
+    text-align: center;
+    min-height: 70px;
+}
+
+.pf-mainOutput label {
+    width: 100%;
+    color: #1e3154;
+    font-weight: 500;
+}
+.elementor hr {
+    margin: 20px 0;
+    background-color: #ccc;
+}
+ #idcorners{margin: 15px 0;
+    padding: 12px 50px;
+    background: rgb(234, 100, 86);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #F0437E;
+    background-color: #1EAF12;
+    border-radius: 30px;
+    font-family: Work Sans;
+    box-shadow: 0px 5px 20px 11px rgba(234, 100, 86, 0.12);
+    margin-bottom: 20px;
+	 margin-left: 430px;
+    text-transform: capitalize;
+	 transition: all 0.3s;}
+
+#idcorners:hover {
+    background: #fff;
+    color: #1EAF12;
+    border: 2px solid #1EAF12;
+    box-shadow: none;
+}
+ #rcorners1{margin: 15px 0;
+    padding: 12px 50px;
+    background: rgb(234, 100, 86);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #F0437E;
+    background-color: #1EAF12;
+    border-radius: 30px;
+    font-family: Work Sans;
+    box-shadow: 0px 5px 20px 11px rgba(234, 100, 86, 0.12);
+    margin-bottom: 20px;
+	 
+    text-transform: capitalize;
+	 transition: all 0.3s;}
+
+#rcorners1:hover {
+    background: #fff;
+    color: #1EAF12;
+    border: 2px solid #1EAF12;
+    box-shadow: none;
+}
+#rcorners2{margin: 15px 0;
+    padding: 12px 30px;
+    background: rgb(234, 100, 86);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 19px;
+	
+    border: 2px solid #F0437E;
+    background-color: #1EAF12;
+    border-radius: 30px;
+    font-family: Work Sans;
+    box-shadow: 0px 5px 20px 11px rgba(234, 100, 86, 0.12);
+    margin-bottom: 20px;
+ text-transform: capitalize;
+	 transition: all 0.3s;}
+
+#rcorners2:hover {
+    background: #fff;
+    color: #1EAF12;
+    border: 2px solid #1EAF12;
+    box-shadow: none;
+}
+#rcorners3{margin: 15px 0;
+    padding: 12px 30px;
+    background: rgb(234, 100, 86);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 19px;
+	margin-left:200px;
+    border: 2px solid #F0437E;
+    background-color: #1EAF12;
+    border-radius: 30px;
+    font-family: Work Sans;
+    box-shadow: 0px 5px 20px 11px rgba(234, 100, 86, 0.12);
+    margin-bottom: 20px;
+ text-transform: capitalize;
+	 transition: all 0.3s;}
+
+#rcorners3:hover {
+    background: #fff;
+    color: #1EAF12;
+    border: 2px solid #1EAF12;
+    box-shadow: none;
+}.table1 table-bordered{
+ font-family: arial, sans-serif;
+    border-collapse: collapse;
+	width: 100%;}
+.table1 table-bordered td, th {
+border:none;
+    text-align: left;
+    padding: 8px;}  
+.newTaxCalculator {
+    background: #fff;
+    box-shadow: 0px 1px 39px rgba(45, 177, 165, 0.19);
+    padding: 15px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.newTaxCalculator h1 {
+    font-size: 27px;
+    margin: 5px 15px 5px;
+    padding: 0 0 3px;
+    color: #1e3154;
+    text-align: center;
+}
+
+.taxTable {
+    padding: 10px 10px;
+}
+
+table thead th {
+    color: #1e3154;
+    font-size: 17px;
+    padding: 10px 10px;
+    border-bottom: 2px solid rgb(234, 100, 86);
+}
+
+table tbody td {
+    padding: 5px 10px;
+}
+
+table tbody td label {
+     font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+    text-align: left !important;
+    display: block;
+}
+
+table tbody td input {
+   border: none !important;
+    border-bottom: 1px solid #ccc !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    text-align: center;
+    width: 100%;
+}
+
+table tbody td input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-bottom: 1px solid #1e3154 !important;
+}
+
+table tbody td input.form-control:disabled {
+    background: rgba(45, 177, 166, 0.1);
+    border-bottom: none !important;
+    border: none !important;
+}
+
+.greenBandTb {
+    background: #2db0a5;
+	border:none;
+}
+
+.output2 .pf-btn {
+    margin: 15px 0;
+    padding: 12px 50px;
+    background: rgb(234, 100, 86);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #F0437E;
+    background-color: #1EAF12;
+    border-radius: 30px;
+    font-family: Work Sans;
+    box-shadow: 0px 5px 20px 11px rgba(234, 100, 86, 0.12);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    transition: all 0.3s;
+}
+
+.output2 .pf-btn:hover {
+    margin: 15px 0;
+    padding: 12px 50px;
+    background: #FFFFFF;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    color: #1EAF12;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #1EAF12;
+    border-radius: 30px;
+    font-family: Work Sans;
+    box-shadow: 0px 5px 20px 11px rgba(234, 100, 86, 0.12);
+    margin-bottom: 20px;
+    text-transform:capitalize;
+    transition: all 0.3s;
+}
+
+#ssy-border {
+    border-right: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	}
+#epf-border {
+   
+	border-bottom: 1px solid #e1e1e1;
+	}
+#home-border {
+    border-right: 1px solid #e1e1e1;
+	
+	}
+#credit-border
+{
+    border-right: 1px solid #e1e1e1;
+	
+	}
+  button,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.learnpress-page .lp-button {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase!important;;
+  letter-spacing: 1px;
+  border: 2px solid #1eaf12;
+  background-color: #1eaf12;
+  padding: 14px 30px;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 30px;
+  color: #fff !important;
+}
+.menuStyle3 .top-bar button, .menuStyle3 .top-bar
+.button, .menuStyle3 .top-bar
+input[type="button"], .menuStyle3 .top-bar
+input[type="reset"], .menuStyle3 .top-bar
+input[type="submit"], .menuStyle3 .top-bar
+.learnpress-page .lp-button {
+  color: #fff;
+}
+button:hover,
+.button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.learnpress-page .lp-button:hover {
+  background-color: transparent;
+  color: #000 !important;
+}
+.menuStyle3 .top-bar button:hover, .menuStyle3 .top-bar
+.button:hover, .menuStyle3 .top-bar
+input[type="button"]:hover, .menuStyle3 .top-bar
+input[type="reset"]:hover, .menuStyle3 .top-bar
+input[type="submit"]:hover, .menuStyle3 .top-bar
+.learnpress-page .lp-button:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+select {
+  color: #666;
+  border: 1px solid #ebebeb;
+  border-radius: 0;
+  padding: 15px 20px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+select:focus {
+  color: #666;
+}
+
+textarea {
+  width: 100%;
+}
+
+    
+
+		</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82067604-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://davidstutz.github.io/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+  <link rel="stylesheet" href="https://davidstutz.github.io/bootstrap-multiselect/dist/css/bootstrap-multiselect.css">
+
+  <script type="text/javascript">
+    $("#chkveg").change(function() {
+      $("input[name=CODES]").val(this.value);
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(function() {
+      $('#chkveg').multiselect({
+        includeSelectAllOption: true
+      });
+      $('#btnget').click(function() {
+        var data = $('#chkveg').val();
+        localStorage.setItem('data', data);
+      })
+    });
+  </script>
+
+</head>
+
+<body>
+
+<div id="container">
+<div class="headerimage">
+<div class="titiler"><h1>Expense Eye</h1></div>
+</div>
+<img src="https://www.thegreatapps.com/application/upload/Apps/2017/03/expense-manager-22.png" style="padding: 30px;display: block;margin: 0 auto;"/>
+<div class="infopanel">
+
+  <!--<div class="text-center" style="margin-bottom: 30px;">What is your goal? <span class="tip">Example: I want to buy a house.</span></div>-->
+
+    <!-- <input id="idgoal" name="goal" type="text" /> -->
+
+      <div class="expensecalculator"><div class="expense_income"><ul class="expense_head"><li><p>Income</p></li><li><p>Amount Per Month (rs)</p></li></ul><ul class="expense_vals"><li><p>Your Net Salary</p></li><li><input id="salary" name="salary" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Partners Net Salary</p></li><li><input id="Partners" name="Partners" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Other Income &#8211; For ex :Rental post tax net income</p></li><li><input id="Other" name="Other" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Other Inocme &#8211; For ex :Agricultural income</p></li><li><input id="Agricultural" name="Agricultural" type="text" value="0" /></li></ul><ul class="expense_totals"><li><p>Total Income per month</p></li><li class="income_total">0</li></ul><p><button class="total_income">Total Income</button></p></div></div><div class="expense_sheet"><h2>Expense Sheet</h2><div class="sheet1"><ul class="expense_head"><li><p>Your Essential expenses</p></li><li><p>Amount Per Month (rs)</p></li></ul><ul class="expense_vals"><li><p>Grocery</p></li><li><input id="Grocery" name="Grocery" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Basic ammenities (electricity, water, gas)</p></li><li><input id="ammenities" name="ammenities" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Domestic Helps</p></li><li><input id="Domestic" name="Domestic" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Bills &#8211; Mobile, Landline, DTH, Netflix, Amazon etc.</p></li><li><input id="Mobile" name="Mobile" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>EMI &#8211; Home Loan, Car Loan, Two wheeler loan</p></li><li><input id="EMI" name="EMI" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Tution Fees ( School, extra activities etc)</p></li><li><input id="Tution" name="Tution" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Insurance Premiums ( Life, health and general insurance)</p></li><li><input id="Insurance" name="Insurance" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Others, if any</p></li><li><input id="Othersany" name="Othersany" type="text" value="0" /></li></ul><ul class="expense_totals"><li><p>Total Essential Expenses per month</p></li><li class="total_expense_val">0</li></ul><p><button class="total_expense">Total Expense</button></p></div><div class="sheet2"><ul class="expense_head"><li><p>Your Non Essential expenses</p></li><li><p>Amount Per Month (rs)</p></li></ul><ul class="expense_vals"><li><p>If you are buying a new phone every year ( put only the monthly cost)</p></li><li><input id="buying" name="buying" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Eating out</p></li><li><input id="Eating" name="Eating" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Movie</p></li><li><input id="Movie" name="Movie" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Shopping ( Online &amp; Offline )</p></li><li><input id="Shopping" name="Shopping" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Saloon Services</p></li><li><input id="Saloon" name="Saloon" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Credit Card interest, if any</p></li><li><input id="Credit" name="Credit" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Holiday</p></li><li><input id="Holiday" name="Holiday" type="text" value="0" /></li></ul><ul class="expense_vals"><li><p>Others, if any</p></li><li><input id="Others_non" name="Others_non" type="text" value="0" /></li></ul><ul class="expense_totals"><li><p>Total Non Essential Expenses per month</p></li><li class="total_non_vals">0</li></ul><p><button class="total_expense_non">Total Non Expense</button></p></div><div class="expense_total_vals"><div class="total_exp_div"><ul class="expense_head"><li><p>In (Rs)</p></li></ul><ul class="expense_totals"><li><p class="Your_Income">Your Income per month</p></li><li><p id="Your_Income">0</p></li></ul><ul class="expense_totals"><li><p class="Your_Savings">Your Savings per month</p></li><li><p id="Your_Savings">0</p></li></ul><ul class="expense_totals"><li><p class="Your_Essential">Your Essential Expenses per month</p></li><li><p id="Your_Essential">0</p></li></ul><ul class="expense_totals"><li><p class="Your_Non">Your Non Essential Expenses per month</p></li><li><p id="Your_Non">0</p></li></ul><ul class="expense_totals"><li><p class="Your_emi">EMI&#8217;s</p></li><li><p id="Your_emi">0</p></li></ul><p><button class="Calculate_total">Calculate</button></p></div><div class="total_exp_emi"><ul class="expense_totals"><li style="list-style-type: none;"><ul class="expense_totals"><li><p class="Your_Income">Expenses</p></li></ul></li></ul><p><!-- </p>
+<li>
+<p id="Expenses_per">
+</li>
+<p> --></p><ul class="expense_totals"><li style="list-style-type: none;"><ul class="expense_totals"><li><p class="Your_Income">EMI</p></li></ul></li></ul><p><!-- </p>
+<li>
+<p id="EMI_per">
+</li>
+<p> --></p><ul class="expense_totals"><li style="list-style-type: none;"><ul class="expense_totals"><li><p class="Your_Income">Savings</p></li></ul></li></ul><p><!-- </p>
+<li>
+<p id="Savings_per">
+</li>
+<p> --></p><p><button class="Calculcation">Calculate</button></p></div></div></div><div class="pop"><div class="popup"><ul><li>Expenses <span id="Expenses_per"></span>%</li><li>EMI: <span id="EMI_per"></span>%</li><li>Savings: <span id="Savings_per"></span>%</li></ul><div class="score"> </div></div></div>
+
+
+</div><!--question -->
+
+
+</div><!--infopanel ends-->
+
+</div><!--container ends-->
+
+</body>
+<script type="text/javascript">
+    $(".total_income").click(function(){
+            var total= parseInt($("#salary").val()) + parseInt($("#Partners").val()) + parseInt($("#Other").val()) + parseInt($("#Agricultural").val());
+            $(".income_total").text(total);
+        });
+        $(".total_expense").click(function(){
+            var totalexpense= parseInt($("#Grocery").val()) + parseInt($("#ammenities").val()) + parseInt($("#Domestic").val()) + parseInt($("#Mobile").val())
+            + parseInt($("#EMI").val()) + parseInt($("#Tution").val()) + parseInt($("#Insurance").val()) + parseInt($("#Othersany").val());
+            $(".total_expense_val").text(totalexpense);
+        });
+        $(".total_expense_non").click(function(){
+            var totalexpense= parseInt($("#buying").val()) + parseInt($("#Eating").val()) + parseInt($("#Movie").val()) + parseInt($("#Shopping").val())
+            + parseInt($("#Saloon").val()) + parseInt($("#Credit").val()) + parseInt($("#Holiday").val()) + parseInt($("#Others_non").val());
+            $(".total_non_vals").text(totalexpense);
+        });
+        $(".Your_Income").click(function(){
+            $("#Your_Income").text($(".income_total").text());
+        });
+        $(".Your_Savings").click(function(){
+            var saves = parseInt($(".total_expense_val").text()) + parseInt($(".total_non_vals").text())
+            var savings =  parseInt($(".income_total").text()) - saves;
+            $("#Your_Savings").text(savings);
+            console.log(savings, saves);
+        });
+        $(".Your_Essential").click(function(){
+            $("#Your_Essential").text($(".total_expense_val").text());
+        });
+        $(".Your_Non").click(function(){
+            $("#Your_Non").text($(".total_non_vals").text());
+        });
+        $(".Your_emi").click(function(){
+            $("#Your_emi").text($("#EMI").val());
+        });
+(function($) {
+  $.fn.inputFilter = function(inputFilter) {
+    return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function() {
+      if (inputFilter(this.value)) {
+        this.oldValue = this.value;
+        this.oldSelectionStart = this.selectionStart;
+        this.oldSelectionEnd = this.selectionEnd;
+      } else if (this.hasOwnProperty("oldValue")) {
+        this.value = this.oldValue;
+        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+      }
+    });
+  };
+}(jQuery));
+
+  // Restrict input to digits by using a regular expression filter.
+  $("input[type='text']").inputFilter(function(value) {
+    return /^\d*$/.test(value);
+  });
+    $(".Calculate_total").click(function(){
+        $("#Your_Income").text($(".income_total").text());
+        var saves = parseInt($(".total_expense_val").text()) + parseInt($(".total_non_vals").text());
+        var savings =  parseInt($(".income_total").text()) - saves;
+        $("#Your_Savings").text(savings);
+        $("#Your_Essential").text($(".total_expense_val").text());
+        $("#Your_Non").text($(".total_non_vals").text());
+        $("#Your_emi").text($("#EMI").val());
+    });
+    $(".Calculcation").click(function(){
+        var exp = $("#Your_Income").text();
+        var exp1 = $("#Your_Savings").text();
+        var exp2 = $("#Your_Essential").text();
+        var exp3 = $("#Your_Non").text();
+        var exp4 = $("#Your_emi").text();        
+        $(".pop").fadeIn();
+        $("#Expenses_per").text(((((+exp2) + (+exp3)) - +exp4) / +exp) * 100);
+        $("#EMI_per").text((exp4 / +exp) * 100 );
+        $("#Savings_per").text((exp1 / +exp) * 100 );
+        var exp_vals = parseInt($("#Expenses_per").text());
+        var sav_vals = parseInt($("#Savings_per").text());
+        if(exp_vals < 30 || sav_vals > 40){
+            $(".score").text("So, Your money follows the 30/30/40 rule (if expenses are less than or equal to 30%, EMI is less than or equal to 30% and Savings is more than or equal to 40%)");
+        }
+        else if(exp_vals > 30 || sav_vals < 40){
+            $(".score").text("So, Your money does not follow the 30/30/40 rule (if expenses are more than 30%, EMI is more than 30% and Savings is less than 40%) ");
+        }
+    });
+    $(".pop").click(function(){
+        $(".pop").fadeOut();
+    });
+</script>
+</html>
+
+
+<!-- http://jsfiddle.net/pmrotule/w7aakdbb/54/ -->
+<!-- <a href="#calculated"><input name="Submit" type="submit" onclick="return Calculate();" value="Next" /></a> -->

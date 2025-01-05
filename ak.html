@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Your Details</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: url('https://img.freepik.com/free-photo/flat-lay-cyber-monday-event-sale-elements-dark-background_23-2148675054.jpg?size=626&ext=jpg') no-repeat center center fixed; background-size: cover; color: white; }
+        .form-container { max-width: 500px; margin: auto; background: rgba(0, 0, 0, 0.7); padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); }
+        h2 { text-align: center; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-size: 1em; margin-bottom: 8px; }
+        input, select { width: 100%; padding: 10px; font-size: 1em; border-radius: 5px; border: 1px solid #ccc; }
+        button { width: 100%; padding: 12px; background: #007BFF; color: white; border: none; border-radius: 5px; font-size: 1.2em; }
+        button:hover { background: #0056b3; }
+        .other-occupation { display: none; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Please Fill in Your Details</h2>
+        <form id="details-form" action="/submit-details" method="POST">
+            <div class="form-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contact_no">Contact No</label>
+                <input type="text" id="contact_no" name="contact_no" required>
+            </div>
+            <div class="form-group">
+                <label for="occupation">Occupation</label>
+                <select id="occupation" name="occupation" required>
+                    <option value="job">Job</option>
+                    <option value="business">Business</option>
+                    <option value="other">Other</option>
+                </select>
+                <div id="other-occupation" class="other-occupation">
+                    <label for="other">Please specify:</label>
+                    <input type="text" id="other" name="other">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="salary">Salary (in Rupees)</label>
+                <input type="number" id="salary" name="salary" required>
+            </div>
+            <!-- Remove the anchor tag and place the button normally -->
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <script>
+        // Toggle occupation input if "Other" is selected
+        const occupationSelect = document.getElementById('occupation');
+        const otherOccupation = document.getElementById('other-occupation');
+        
+        occupationSelect.addEventListener('change', function() {
+            if (occupationSelect.value === 'other') {
+                otherOccupation.style.display = 'block';
+            } else {
+                otherOccupation.style.display = 'none';
+            }
+        });
+
+        // Handle form submission to redirect after login
+        document.getElementById('details-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from actually submitting
+            
+            // Here, you can add logic to handle form submission (e.g., AJAX request)
+            // After the form is "submitted", you can redirect to the next page
+
+            window.location.href = 'ideaaa.html'; // Redirect to the desired page
+        });
+    </script>
+</body>
+</html>
